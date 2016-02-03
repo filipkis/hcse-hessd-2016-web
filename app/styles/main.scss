@@ -23,7 +23,7 @@ $navbar-default-link-disabled-color: rgb(204, 204, 204);
 
 /* Space out content a bit */
 body {
-  padding-top: 70px;
+  padding-top: 50px;
   padding-bottom: 20px;
 }
 
@@ -67,6 +67,7 @@ body {
     font-size: 21px;
     padding: 14px 24px;
   }
+  background: rgba(255,255,255,0.75);
 }
 
 /* Supporting marketing content */
@@ -117,8 +118,11 @@ body {
   }
 }
 
-//table.dates {
-//  tr {
-//    border-bottom: #e0e8fa solid 1px;
-//  }
-//}
+.cover{
+  color: rgb(255, 255, 255);
+  position: relative;
+  min-height: 350px;
+  background: url("/images/Stockholm_view_ over_The_Riddarholmen_Island_Photo_Jeppe Wikstrom_High-res.png") no-repeat scroll 50% 100% / cover transparent;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}

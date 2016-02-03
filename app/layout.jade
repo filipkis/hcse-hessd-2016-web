@@ -23,29 +23,50 @@ html.no-js(lang='')
       .container
         .navbar-header.pull-left
           a.navbar-brand(href='/', target='_top') HCSE + HESSD 2016
-        ul.nav.navbar-nav
-          li(class={active:menu === 'submitting'})
-            a(href='/submitting')
-              | Submitting
-          li(class={active: menu === 'organizers'})
-            a(href='/organizers')
-              | Organizers
-          li(class={active:menu === 'previous'})
-            a(href='/previous')
-              | Previous years
+        .navbar-header.pull-right
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#main-menu', aria-expanded='false')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #main-menu.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li(class={active:menu === 'submitting'})
+              a(href='/submitting')
+                | Submitting
+            li(class={active:menu === 'attending'})
+              a(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | Attending
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='/attending/venue') Venue
+                li
+                  a(href='/attending/transportation') Transportation
+                li
+                  a(href='/attending/accommodation') Accommodation
+            li(class={active: menu === 'organizers'})
+              a(href='/organizers')
+                | Organizers
+            li(class={active:menu === 'previous'})
+              a(href='/previous')
+                | Previous years
 
+
+    .cover
+      .container
+        .text-primary
+          .jumbotron
+            h1.text-primary HCSE + HESSD 2016
+            p.lead
+              | 6
+              sup th
+              |   International Working Conference on Human-Centred Software Engineering
+              br
+              | 8
+              sup th
+              |   International Working Conference on Human Error, Safety, and System Development
     .container
-      .text-primary
-        .jumbotron
-          h1.text-primary HCSE + HESSD 2016
-          p.lead
-            | 6
-            sup th
-            |   International Working Conference on Human-Centred Software Engineering
-          p.lead
-            | 8
-            sup th
-            |   International Working Conference on Human Error, Safety, and System Development
       .row
         .col-lg-8
           block content
@@ -94,6 +115,16 @@ html.no-js(lang='')
                 td Final submission&nbsp;
                   small
                     i  (all submissions)
+
+      if menu == 'default'
+        hr
+        .row
+          .col-sm-4.col-sm-offset-1
+            img.img-thumbnail.img-circle(src="/images/View_city_hall_waterfront_building_zoomed_Photo_Erik_G_Svensson_High-res.png")
+            h4.text-center City of Stockholm
+          .col-sm-4.col-sm-offset-2
+            img.img-circle.img-thumbnail(src="/images/kth.png")
+            h4.text-center KTH Royal Institute of Technology
       hr
       h4 Supporting Institutions and Sponsors
       p.text-center
