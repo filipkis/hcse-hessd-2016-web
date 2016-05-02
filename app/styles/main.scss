@@ -126,3 +126,23 @@ body {
   padding-top: 20px;
   margin-bottom: 10px;
 }
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -60px;
+  visibility: hidden;
+}
+
+.well.condensed {
+  h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  th, td {
+    line-height: 1;
+  }
+  .table {
+    margin-bottom: 0;
+  }
+}

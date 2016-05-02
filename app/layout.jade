@@ -4,7 +4,8 @@ html.no-js(lang='')
     -var menu='default';
   head
     meta(charset='utf-8')
-    meta(name='description', content='')
+    meta(name='keywords', content='HCSE 2016, HESSD 2016, Conference, Human-Centered Software Engineering, Human Error, Safety, and System Development, Stockholm, Sweden, 2016, HCSE, HESSD, IFIP')
+    meta(name='description', content='HCSE and HESSD are IFIP TC 13 working conferences that bring together researchers and practitioners. For the first time, they will be jointly organized by IFIP Working Groups WG 13.2 and WG 13.5. HCSE is targeted towards user interface design, combining software engineering and human-computer interaction and integrating human-centered design with software engineering processes. HESSD is concerned with the role and impact of human error in design, management and operation of safety-critical systems and leading edge techniques for mitigating the impact of human error in complex systems.')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     title HCSE + HESSD 2016
     // Place favicon.ico in the root directory
@@ -32,24 +33,35 @@ html.no-js(lang='')
         #main-menu.collapse.navbar-collapse
           ul.nav.navbar-nav
             li(class={active:menu === 'submitting'})
-              a(href='/submitting')
+              a(href='/submitting/#top')
                 | Submitting
+            li(class={active: menu === 'program'})
+              a(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                | Program
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='/program/keynote/#top') Keynotes
+                li
+                  a(href='/program/social/#top') Social
             li(class={active:menu === 'attending'})
               a(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
                 | Attending
                 span.caret
               ul.dropdown-menu
                 li
-                  a(href='/attending/venue') Venue
+                  a(href='/attending/registration/#top') Registration
                 li
-                  a(href='/attending/transportation') Transportation
+                  a(href='/attending/venue/#top') Venue
                 li
-                  a(href='/attending/accommodation') Accommodation
+                  a(href='/attending/transportation/#top') Transportation
+                li
+                  a(href='/attending/accommodation/#top') Accommodation
             li(class={active: menu === 'organizers'})
-              a(href='/organizers')
+              a(href='/organizers/#top')
                 | Organizers
             li(class={active:menu === 'previous'})
-              a(href='/previous')
+              a(href='/previous/#top')
                 | Previous years
 
 
@@ -66,6 +78,7 @@ html.no-js(lang='')
               | 8
               sup th
               |   International Working Conference on Human Error, Safety, and System Development
+    a#top.anchor
     .container
       .row
         .col-lg-8
@@ -82,18 +95,23 @@ html.no-js(lang='')
           .well
             .text-center
               a.btn.btn-primary(href="https://www.easychair.org/conferences/?conf=hcsehessd2016") Submit a Paper now
-          .well
+          .well.condensed
             h4 Important dates
             table.table
               tr
                 td.spaced
-                  b April 11, 2016
+                  strike April 11, 2016
+                  br
+                  b April 25, 2016
                 td
                   b Abstract submission&nbsp;
                     small
                       i (full & short papers)
               tr
-                td.spaced April 18, 2016
+                td.spaced
+                  strike April 18, 2016
+                  br
+                  | May 2, 2016
                 td Paper submission&nbsp;
                   small
                     i  (full & short)
@@ -115,23 +133,42 @@ html.no-js(lang='')
                 td Final submission&nbsp;
                   small
                     i  (all submissions)
+          a.twitter-timeline(href='https://twitter.com/HCSE_HESSD', data-widget-id='717628933043318784') Tweets by @HCSE_HESSD
+          script.
+            !function (d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+              if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p + "://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+              }
+            }(document, "script", "twitter-wjs");
 
       if menu == 'default'
         hr
         .row
           .col-sm-4.col-sm-offset-1
-            img.img-thumbnail.img-circle(src="/images/View_city_hall_waterfront_building_zoomed_Photo_Erik_G_Svensson_High-res.png")
-            h4.text-center City of Stockholm
+            a(href='http://international.stockholm.se/')
+              img.img-thumbnail.img-circle(src="/images/View_city_hall_waterfront_building_zoomed_Photo_Erik_G_Svensson_High-res.png")
+            h4.text-center
+              a(href='http://international.stockholm.se/') City of Stockholm
           .col-sm-4.col-sm-offset-2
-            img.img-circle.img-thumbnail(src="/images/kth.png")
-            h4.text-center KTH Royal Institute of Technology
+            a(href='https://www.kth.se/en')
+              img.img-circle.img-thumbnail(src="/images/kth.png")
+            h4.text-center
+              a(href='https://www.kth.se/en') KTH Royal Institute of Technology
       hr
       h4 Supporting Institutions and Sponsors
       p.text-center
-        a(href="http://ifip-tc13.org/",target="_blank")
+        a(href="http://ifip-tc13.org/",target="_blank", style="margin-right:100px")
           img(src="/images/logos-IFIP-TC13.png")
-      .footer
-        p Copyright 2016 &copy; Media Technology and Interaction Design · KTH Royal Institute of Technology, Stockholm · All rights reserved
+        a(href="http://openlabsthlm.se/",target="_blank", style="margin-right:100px")
+          img(src="/images/openlab.png", height="100")
+        a(href="http://www.kth.se/",target="_blank")
+          img(src="/images/kth_rgb.jpg", height="100")
+    .footer
+        p.text-center Copyright 2016 &copy; Media Technology and Interaction Design · KTH Royal Institute of Technology, Stockholm · All rights reserved
     //// Google Analytics: change UA-XXXXX-X to be your site's ID.
     //script.
     //  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
