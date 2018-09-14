@@ -134,6 +134,10 @@ a.anchor {
   visibility: hidden;
 }
 
+.table tbody tr td {
+  padding: 8px 8px;
+}
+
 .well.condensed {
   h4 {
     margin-top: 5px;
@@ -145,4 +149,7 @@ a.anchor {
   .table {
     margin-bottom: 0;
   }
+}
+.bg-active {
+  background-color: #f5f5f5;
 }

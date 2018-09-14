@@ -1,0 +1,308 @@
+extends ../../layout.jade
+
+block info
+  -var menu='program'
+
+block content
+  h1 Conference track
+
+  p Conference proceedings can be found at the Springer Library.
+
+  h2 Monday, August 29th
+  table.table.table-responsive
+    tr
+      td.col-md-2 08:00 - 09:00
+      td Registration
+    tr.info
+      td 09:00 - 10:30
+      td
+        | Opening
+        br
+        a(href="/program/keynote/#opening") Keynote by Danica Kragic
+    tr.active
+      td 10:30 - 11:00
+      td Refreshment break
+    tr.info
+      td 11:00 - 12:10
+      td
+        a(href="#s01") Agile & Human‐Centered Software Engineering
+    tr.active
+      td 12:10 - 13:30
+      td Lunch
+    tr.info
+      td 13:30 - 15:10
+      td
+        a(href="#s02") Usability Evaluation & Testing
+    tr.active
+      td 15:10 - 15:40
+      td Refreshment break
+    tr.info
+      td 15:40 - 17:00
+      td
+        a(href="#s03") Socio‐Technical & Ethical Considerations
+    tr.info
+      td 17:00 - 18:00
+      td IFIP WGs & Business meetings
+    tr.warning
+      td 18:00 - 21:00
+      td
+        a(href="/program/social/#reception") Welcome reception
+
+  h3 Tuesday, August 30th
+  table.table.table-responsive
+    tr.info
+      td.col-md-2 09:00 - 10:20
+      td
+        a(href="#s04") Human Error & Safety‐Critical Systems
+    tr.active
+      td 10:20 - 10:50
+      td Refreshment break
+    tr.info
+      td 10:50 - 12:00
+      td
+        a(href="#s05") User & Developer Experience
+    tr.active
+      td 12:00 - 13:30
+      td Lunch
+    tr.info
+      td 13:30 - 15:00
+      td Interactive Session
+    tr.active
+      td 15:00 - 15:30
+      td Refreshment break
+    tr.info
+      td 15:30 - 17:00
+      td
+        a(href="#s06") Demo/Posters
+        | &nbsp;+ OpenLab Visit
+    tr.warning
+      td 18:00 - 22:00
+      td
+        a(href="/program/social/#dinner") Conference dinner
+
+  h3 Wednesday, August 31st
+  table.table.table-responsive
+    tr.info
+      td 09:00 - 10:00
+      td
+        a(href="/program/keynote/#closing") Keynote by Ivar Jacobson
+    tr.active
+      td 10:00 - 10:30
+      td Refreshment break
+    tr.info
+      td.col-md-2 10:30 - 12:10
+      td
+        a(href="#s07") Models & Methods
+    tr.active
+      td 12:10 - 13:30
+      td Lunch
+    tr.info
+      td 13:30 - 15:00
+      td
+        a(href="#s08") Using & Adopting Tools
+        br
+        | Closing
+
+  h2 Sessions
+  a#s01.anchor
+  h3 S01: Agile & Human‐Centered Software Engineering
+  h4
+    em Session chair: Anders Bruun
+  div
+    :markdown
+      Responsibilities and Challenges of Product Owners at Spotify ‐ An Exploratory Case Study (**Full paper**)<br>
+      *Sigurhanna Kristinsdottir, Marta Larusdottir and Åsa Cajander*
+  div.bg-active
+    :markdown
+      Supporting the HCI Aspect of Agile Software Development by Tool Support for UI‐Pattern Transformations (**Late braking results**)<br>
+      *Peter Forbrig and Marc Saurin*
+  div
+    :markdown
+      Human‐Centered Software Engineering
+      as a Chance to Ensure Software Quality
+      within the Digitization of Human
+      Workflows (**Late braking results**)<br>
+      *Holger Fischer and Björn Senft*
+  a#s02.anchor
+  h3 S02: Usability Evaluation & Testing
+  h4
+    em Session chair: Camille Fayollas
+  div
+    :markdown
+      Usability Problems Experienced by
+      Different Groups of Skilled Internet
+      Users: Gender, Age, and Background (**Late braking results**)<br>
+      *Jane Billestrup, Anders Bruun and Jan
+      Stage*
+  div.bg-active
+    :markdown
+      User‐Tests‐Results Injection into a Task‐
+      Based Design Process for the
+      Assessment and Improvement of both
+      Usability and User Experience (**Full paper**)<br>
+      *Regina Bernhaupt, Philippe Palanque,
+      François Manciet and Célia Martinie*
+  div
+    :markdown
+      Framework for Relative Web Usability
+      Evaluation on Usability Features in MDD
+      Workflows (**Late braking results**)<br>
+      *Shinpei Ogata, Yugo Goto and Kozo
+      Okano*
+  div.bg-active
+    :markdown
+      Testing Prototypes and Final User
+      Interfaces through an Ontological
+      Perspective for Behavior‐Driven
+      Development (**Full paper**)<br>
+      *Thiago Silva, Jean‐Luc Hak and Marco
+      Winckler*
+  a#s03.anchor
+  h3 S03: Socio‐Technical & Ethical Considerations
+  h4
+    em Session chair: Kati Kuusinen
+  div
+    :markdown
+      Communication in Teams ‐ An
+      Expression of Social Conflicts (**Full paper**)<br>
+      *Jil Klünder, Kurt Schneider, Fabian
+      Kortum, Julia Straube, Lisa Handke and
+      Simone Kauffeld*
+  div.bg-active
+    :markdown
+      Exploring the Requirements and Design
+      of Persuasive Intervention Technology
+      to Combat Digital Addiction (**Full paper**)<br>
+      *Amen Alrobai, John McAlaney, Huseyin
+      Dogan, Keith Phalp and Raian Ali*
+  div
+    :markdown
+      Do You Own a Volkswagen? Values as
+      Non‐Functional Requirements (**Late braking results**)<br>
+      *Balbir Barn*
+  a#s04.anchor
+  h3 S04: Human Error & Safety‐Critical Systems
+  h4
+    em Session chair: Marco Winckler
+  div
+    :markdown
+      A Core Ontology of Safety Risk
+      Concepts: Reconciling Scientific
+      Literature with Standards for
+      Automotive and Railway (**Full paper**)<br>
+      *Hermann Kaindl, Thomas Rathfux,
+      Bernhard Hulin, Roland Beckert, Edin
+      Arnautovic and Roman Popp*
+  div.bg-active
+    :markdown
+      Complementary Tools and Techniques
+      for Supporting Fitness‐for‐Purpose of
+      Interactive Critical Systems (**Full paper**)<br>
+      *Dorrit Billman, Camille Fayollas, Michael
+      Feary, Célia Martinie and Philippe
+      Palanque*
+  div
+    :markdown
+      Demon Hunt ‐ The Role of Endsley’s
+      Demons of Situation Awareness in
+      Maritime Accidents (**Late braking results**)<br>
+      *Tim Claudius Stratmann and Susanne
+      Boll*
+  a#s05.anchor
+  h3 S05: Socio‐Technical & Ethical Considerations
+  h4
+    em Session chair: Cristian Bogdan
+  div
+    :markdown
+      Are Software Developers just Users of
+      Development Tools? Assessing
+      Developer Experience of a Graphical
+      User Interface Designer (**Full paper**)<br>
+      *Kati Kuusinen*
+  div.bg-active
+    :markdown
+      A Conceptual UX‐aware Model of
+      Requirements (**Late braking results**)<br>
+      *Pariya Kashfi, Robert Feldt, Agneta
+      Nilsson and Richard Berntsson Svensson*
+  div
+    :markdown
+      Keep the Beat: Audio Guidance for
+      Runner Training (**Late braking results**)<br>
+      *Luca Balvis, Ludovico Boratto, Fabrizio
+      Mulas, Lucio Davide Spano, Salvatore
+      Carta and Gianni Fenu*
+  a#s06.anchor
+  h3 S06: Demos & Posters
+  h4
+    em Session chairs: Regina Bernhaupt, Filip Kis
+  div
+    :markdown
+      Keep the Beat: Audio Guidance for
+      Runner Training<br>
+      *Luca Balvis, Ludovico Boratto, Fabrizio
+      Mulas, Lucio Davide Spano, Salvatore
+      Carta and Gianni Fenu*
+  div.bg-active
+    :markdown
+      User Experience Evaluation Methods:
+      Lessons Learned from an Interactive TV
+      Case‐Study<br>
+      *Dimitri Drouet and Regina Bernhaupt*
+  div
+    :markdown
+      Endev: Declarative Prototyping with
+      Data<br>
+      *Filip Kis and Cristian Bogdan*
+  div.bg-active
+    :markdown
+      Collaborative Task Modeling: A First
+      Prototype Integrated in HAMSTERS<br>
+      *Marius Koller, Gerrit Meixner and
+      Cristian Bogdan*
+  div
+    :markdown
+      Accelerated Development for Accessible
+      Apps ‐ Model Driven Development of
+      Transportation Apps for Visually
+      Impaired People<br>
+      *Elmar Krainz, Johannes Feiner and
+      Martin Fruhmann*
+  a#s07.anchor
+  h3 S07: Models & Methods
+  h4
+    em Session chair: Peter Forbrig
+  div
+    :markdown
+      The Goals Approach: Enterprise Modeldriven
+      Agile Human‐Centered Software
+      Engineering (**Full paper**)<br>
+      *Pedro Valente, Thiago Silva, Marco
+      Winckler and Nuno J. Nunes*
+  div.bg-active
+    :markdown
+      Engineering Context‐Adaptive UIs for
+      Task‐Continuous Cross‐Channel
+      Applications (**Full paper**)<br>
+      *Enes Yigitbas and Stefan Sauer*
+  div
+    :markdown
+      UCProMo—A User‐Centred Process
+      Model (**Late braking results**)<br>
+      *Tom Gross*
+  a#s08.anchor
+  h3 S08: Using & Adopting Tools
+  h4
+    em Session chair: Stefan Sauer
+  div
+    :markdown
+      Collaborative Task Modelling on the
+      Web (**Full paper**)<br>
+      *Marco Manca, Fabio Paterno and
+      Carmen Santoro*
+  .bg-active
+    :markdown
+      Ceiling and Threshold of PaaS Tools: The
+      Role of Learnability in Tool Adoption (**Late braking results**)<br>
+      *Rui Alves and Nuno J. Nunes*
+
